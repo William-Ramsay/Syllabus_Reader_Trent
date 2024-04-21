@@ -1,0 +1,12 @@
+section{
+    display:grid;
+    grid-template-columns: 20em 20em 1fr;
+    grid-template-rows: 10em 10em;
+    align-items: center;
+    width:100em;
+    height:50em;
+    border: 0.4em solid black;
+    gap:1em;
+    padding:1em;
+}
+

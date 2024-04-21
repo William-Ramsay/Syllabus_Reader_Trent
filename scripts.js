@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', e=>{
 
 
-
+    const clean =/<[^>]+>|&\w+|[.;:,#"()]|x\d+|\n/g;
     let body = document.querySelector('body');
     let input = document.querySelector('input');
     let div = document.querySelector('div');
@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', e=>{
         reader.readAsText(file);
         reader.addEventListener('load', e =>{
             result = reader.result;
-        })
+            result.replace(clean, "");
+;        })
 
 
  

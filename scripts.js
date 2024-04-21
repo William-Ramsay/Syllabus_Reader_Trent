@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', e=>{
             result = reader.result;
         })
 
-    console.log('complete')
 
  
     })

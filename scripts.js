@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', e=>{
         reader.readAsText(file);
         reader.addEventListener('load', e =>{
             result = reader.result;
-            console.log(result)
         })
 
     console.log('complete')
